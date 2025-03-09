@@ -4,21 +4,25 @@
 
 const dice = document.getElementById("dice");
 const diceBtn = document.getElementById("btn");
-let diceFaces = ["&#9857", "&#9858", "&#9859", "&#9860", "&#9861"];
+const diceFaces = ["&#9857", "&#9858", "&#9859", "&#9860", "&#9861", "&#9861"];
+const resultFace = document.querySelector(".roll-dice");
+const resultText = document.querySelector(".roll-text");
+const resultConatiner = document.querySelector(".resultConatiner");
 
-diceFaces[2];
-
-console.log(diceFaces);
-
+let counter = 1;
 const rollDice = () => {
   dice.classList.remove("rolling");
   void dice.offsetWidth;
   dice.classList.add("rolling");
-  console.log(dice);
-};
 
-const diceFace = () => {
-  return Math.floor(Math.random() * 5);
+  let randomFaces = Math.floor(Math.random() * 6);
+  dice.innerHTML = diceFaces[randomFaces];
+  const test = document.createElement("div");
+  let updateCounter = counter++;
+  test.classList.add("roll-container");
+  test.innerHTML = `<span class="roll-text">Roll${updateCounter}:</span><span class="roll-dice">${diceFaces[randomFaces]}</span>`;
+
+  resultConatiner.appendChild(test);
 };
 
 diceBtn.addEventListener("click", rollDice);
