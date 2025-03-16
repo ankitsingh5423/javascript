@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mood-tracker-card {
+  /* border: 1px solid black; */
+  width: max-content;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.mood-tracker-header {
+  text-align: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.669);
+  display: flex;
+  justify-content: center;
+}
+.current-mood {
+  margin: 2rem 0;
+  /* border: 2px solid red; */
+  width: max-content;
+}
+.current-mood span {
+  font-size: 70px;
+}
+.current-mood p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.mood-tracker-footer {
+  margin: 10px;
+}
+.moods {
+  display: flex;
+  gap: 1rem;
+}
+.moods button {
+  font-size: 40px;
+}
+.history-container {
+  margin: 10px 0;
+}
+.history-button {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.show {
+  /* display: block; */
+  display: block !important;
+  transform: translateY(0) !important;
+  transition: 0.5s ease !important;
+}
+.history {
+  transform: translateY(-90px);
+  transition: 0.5s ease;
+  display: none;
+}
+.history span {
+  font-size: 40px;
+}
