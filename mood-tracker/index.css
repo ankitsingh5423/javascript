@@ -6,15 +6,19 @@
 button {
   cursor: pointer;
 }
+.heading {
+  text-align: center;
+  padding-top: 2rem;
+}
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 4rem;
 }
 .mood-tracker-card {
   /* border: 1px solid black; */
-  width: max-content;
+  width: 400px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
@@ -44,12 +48,13 @@ section {
 .moods {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .moods button {
   font-size: 40px;
 }
 .history-container {
-  margin: 10px 0;
+  margin: 30px 0;
 }
 .history-button {
   display: inline-block;
@@ -59,7 +64,8 @@ section {
 }
 .show {
   /* display: block; */
-  display: block !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
   transform: translateY(0) !important;
   transition: 0.5s ease !important;
 }
@@ -67,7 +73,24 @@ section {
   transform: translateY(-90px);
   transition: 0.5s ease;
   display: none;
+  gap: 10px;
+  padding-top: 10px;
 }
 .history span {
   font-size: 40px;
 }
+
+/* responisve */
+@media (max-width: 375px) {
+  .mood-tracker-card {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  .moods{
+    gap: 5px;
+  }
+  .history{
+    gap: 5px;
+  }
+}
+/* responisve */
