@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+button {
+  cursor: pointer !important;
+}
+.heading {
+  text-align: center;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+.quoteBox {
+  width: 600px;
+  /* border: 1px solid red; */
+  margin: 3rem auto;
+  padding: 3rem 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.quoteDisplay {
+  /* border: 3px solid green; */
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 5px;
+}
+.quoteDetails{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.quoteDetails p{
+  font-size: 18px;
+}
+.quoteFooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 5px;
+}
+button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #000;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  /* background-color: #212121; */
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  /* background-color: #212121; */
+  transition: 0.3s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(0);
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+  color: #1479ea;
+  border: 3px ridge #1479ea;
+}
+/* .toast{
+  position: absolute !important;
+} */
+/* .displayed{
+  top: 18%;
+  right: 441px !important;
+} */
