@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  background-color: #000 !important;
+  color: #e50914 !important;
+}
+.heading h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 800;
+}
+.book {
+  width: 100%;
+  height: 100%;
+}
+.book img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.search-section input {
+  width: 400px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff87;
+  border-radius: 5px;
+  color: #fff;
+}
+.search-section input::placeholder{
+  padding-left: 10px;
+}
+.search-section button {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  transform: 0.3s ease;
+}
+.search-section button:hover {
+  background-color: rgb(193, 17, 25);
+}
