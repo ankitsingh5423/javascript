@@ -16,6 +16,8 @@
     <!-- bootstrap-link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!-- bootstrap-link -->
+    <!-- icon-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
 </head>
@@ -26,43 +28,147 @@
             <div class="heading">
                 <h1>Books Library</h1>
             </div>
-            <div class="search-section pb-5 text-center">
-                <input type="text" placeholder="Book">
-                <button>Search</button>
-                <select name="" id=""></select>
+            <div class="books-header pb-5 text-center row">
+                <div class="search-section col-lg-9 col-md-8 col-sm-12">
+                    <input type="text" placeholder="Book">
+                    <button>Search</button>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 py-3 py-md-0">
+                    <div class="side-bar justify-content-end">
+                        <div class="sort">
+                            <p>Sort By</p>
+                            <select name="sort" id="sort">
+                                <option value="name">Name</option>
+                                <option value="author">Author</option>
+                                <option value="date">Date</option>
+                            </select>
+                        </div>
+                        <div class="grid-layout d-none d-lg-block">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="library-books row g-5">
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="book col-lg-3 col-md-6 col-sm-12">
-                    <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
-                        alt="book-image">
+                    <a href="#">
+                        <img src="https://marketplace.canva.com/EAFfSnGl7II/2/0/1003w/canva-elegant-dark-woods-fantasy-photo-book-cover-vAt8PH1CmqQ.jpg"
+                            alt="book-image">
+                    </a>
+                    <h5 class="bookName">Book Name</h5>
+                    <div class="book-cover-detail">
+                        <small>
+                            date : <span class="writtenOn">09-04-2003</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">author name</span>
+                        </small>
+                    </div>
                 </div>
             </div>
         </div>
