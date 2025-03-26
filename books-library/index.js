@@ -5,6 +5,7 @@ const authoName = document.querySelector(".authoName");
 const writtenOn = document.querySelector(".writtenOn");
 const bookImage = document.querySelector(".bookImage");
 const category = document.querySelector(".category");
+const booksHeader = document.querySelector(".books-header");
 
 const url =
   "https://api.freeapi.app/api/v1/public/books?page=1&limit=10&inc=kind%252Cid%252Cetag%252CvolumeInfo&query=tech";
@@ -29,8 +30,28 @@ const booksDetails = async () => {
     const {
       data: { data },
     } = booksData;
-    const [id] = data;
-    console.log(data, id);
+    const view = data.map((e) => {
+      return `<div class="book col-lg-3 col-md-6 col-sm-12">
+                    <a href="#">
+                        <img class="bookImage"
+                            src="${e.volumeInfo.imageLinks.smallThumbnail}">
+                    </a>
+                    <div class="book-cover-detail">
+                        <h5 class="bookName">${e.volumeInfo.title}</h5>
+                        <small>
+                            date : <span class="writtenOn">${e.volumeInfo.publishedDate}</span>
+                        </small>
+                        <small>
+                            author : <span class="authoName">${e.volumeInfo.authors}</span>
+                        </small>
+                        <small>
+                            category : <span class="category">${e.volumeInfo.categories}</span>
+                        </small>
+                    </div>
+                </div>`;
+    });
+
+    booksGrid.innerHTML = view.join("");
   } catch (error) {
     console.error(error);
   }
