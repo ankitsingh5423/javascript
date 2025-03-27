@@ -6,6 +6,7 @@ const writtenOn = document.querySelector(".writtenOn");
 const bookImage = document.querySelector(".bookImage");
 const category = document.querySelector(".category");
 const booksHeader = document.querySelector(".books-header");
+const inputText = document.querySelector(".inputText");
 
 const url =
   "https://api.freeapi.app/api/v1/public/books?page=1&limit=10&inc=kind%252Cid%252Cetag%252CvolumeInfo&query=tech";
@@ -30,6 +31,7 @@ const booksDetails = async () => {
     const {
       data: { data },
     } = booksData;
+
     const view = data.map((e) => {
       return `<div class="book col-lg-3 col-md-6 col-sm-12">
                     <a href="#">
@@ -50,7 +52,6 @@ const booksDetails = async () => {
                     </div>
                 </div>`;
     });
-
     booksGrid.innerHTML = view.join("");
   } catch (error) {
     console.error(error);
@@ -59,4 +60,6 @@ const booksDetails = async () => {
 
 booksDetails();
 
+// console.log(getInputValue())
 gridButton.addEventListener("click", gridToggle);
+inputText.addEventListener("input", booksDetails);
