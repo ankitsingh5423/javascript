@@ -32,7 +32,11 @@ const booksDetails = async () => {
       data: { data },
     } = booksData;
 
-    const view = data.map((e) => {
+    let arr = [];
+    arr.push(data);
+    console.log(arr);
+
+    const view = arr.map((e) => {
       return `<div class="book col-lg-3 col-md-6 col-sm-12">
                     <a href="#">
                         <img class="bookImage"
@@ -59,7 +63,5 @@ const booksDetails = async () => {
 };
 
 booksDetails();
-
-// console.log(getInputValue())
 gridButton.addEventListener("click", gridToggle);
 inputText.addEventListener("input", booksDetails);
